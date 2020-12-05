@@ -1,0 +1,9 @@
+<article class="four columns">
+	<h4 class="post-title">
+	  <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+	</h4>
+	<p>{{post.display_excerpt}}</p>
+	<a class="post-link" href="{{ post.url | relative_url }}">READ MORE</a>
+	<hr>
+	<p>By {{post.author}}</p>
+</article>

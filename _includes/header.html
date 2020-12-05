@@ -1,0 +1,27 @@
+<header class="site-header" role="banner" id='site-header'>
+
+  <!-- checkbox hack for hamburger menu -->
+  <input type="checkbox">
+
+  <nav>
+      <div>
+        <a class="site-title" href="{{ "/" | relative_url}}">{{ site.display_title | escape }}</a>
+      </div>
+
+      <div>
+          <a href="/faq/">FAQ</a>
+          <a href="/blog/">Blog</a>
+      </div>
+
+      <div>
+          <a href=""><i class="fas fa-bars"></i></a>
+      </div>
+  </nav>
+
+  <!-- hidden by hamburger menu checkbox -->
+  <div id="menu">
+      <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/blog/">Blog</a></li>
+  </div>
+
+</header>

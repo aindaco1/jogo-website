@@ -1,0 +1,359 @@
+/** font **/
+@font-face {
+    font-family: 'Noir Noir Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Noir_regular.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Noir Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Noir_medium.woff') format('woff');
+}
+
+/*******************
+WHOLE SITE FORMATTING
+********************/
+h1, h3, h5, button {
+    font-family: 'Noir Medium', sans-serif;
+    font-weight: 900;
+}
+
+p, ul, a {
+    font-family: 'Noir Noir Regular', sans-serif;
+    font-weight: 400;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/** padding, font-size, and border-radius, transition and box-shadow
+values lifted from  original site at houseparty.com **/
+button {
+    padding: 1em 2.5em;
+    border: none;
+    border-radius: 3em;
+    background-color: #FF2A6D;
+    color: #FCF7F8;
+    font-size: 100%;
+    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.1);
+    transition: transform .3s ease-out, box-shadow .3s ease-out;
+}
+
+/** hover state lifted from  original site at houseparty.com **/
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.35em 0.85em rgba(0, 0, 0, 0.2);
+}
+
+/**************
+NAV FORMATTING 
+***************/
+nav {
+    background-color: #FCF7F8;
+    display: flex;
+    height: 6vh; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #FF2A6D;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 120%;
+}
+
+nav div:last-child {
+    display: none;
+}
+
+nav div:first-child {
+    flex-grow: 4.6;
+    margin-left: 2vw;
+}
+
+nav div:first-child a {
+    font-size: 150%;
+    transition: all .1s ease-in;
+}
+
+nav div:first-child a:hover {
+    color: #01012B;
+}
+
+nav div:nth-child(2) {
+    flex-grow: 0.4;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div:nth-child(2) a {
+    transition: all .1s ease-in;
+}
+
+nav div:nth-child(2) a:hover {
+    color: #05D9E8;
+    transform: scale(1.01);
+}
+
+input[type=text] {
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #FF2A6D;
+    border-radius: 50px;
+    padding: .4vw;
+}
+
+/**************
+HAMBURGER HACK
+***************/
+input[type=checkbox] {
+    position: absolute;
+    right: 3.5vw;
+    top: 1.5vh;
+    justify-content: flex-end;
+    opacity: 0;
+}
+
+#menu {
+    position: absolute;
+    opacity: 0;
+    right: 0px;
+    background-color: #FF2A6D;
+    text-align: center;
+    width: 100%;
+    height: 0px;
+    z-index: 0;
+    transition: all .3s ease-in-out;
+}
+
+#menu li, #menu a {
+    list-style: none;
+    text-decoration: none;
+    color: #FCF7F8;
+    font-weight: 900;
+    padding: 1.8vh 0;
+    transition: all .1s ease-in;
+}
+
+#menu a:hover {
+    color: #05D9E8;
+}
+
+#menu li:not(:first-child) {
+    border-top: solid 2px #FDE74C;
+}
+
+/**************
+MISCELLANEOUS
+***************/
+button i {
+    padding-right: .3vw;
+}
+
+/** position, margin, and box-shadow values
+lifted from  original site at houseparty.com **/
+#sticky-button {
+    background-color: #05D9E8;
+    position: fixed;
+    margin-left: 1em;
+    margin-top: 1em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25em 1em;
+}
+
+/********************
+COLORBLOCK FORMATTING
+*********************/
+.block-row {
+    display: flex;
+}
+
+.block-row img {
+    border: none;
+    box-shadow: none;
+    height: 30vw;
+    width: auto;
+}
+
+.colorblock {
+    display: flex;
+    height: 80vh;
+    width: 50vw;
+    padding: 6vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-yellow-block {
+    background-color: #FDE74C;
+    font-size: 3vw;
+    flex-direction: column;
+}
+
+#top-yellow-block button {
+    font-size: 50%;
+    margin-top: 0;
+    margin-bottom: 3vh;
+}
+
+#top-yellow-block h1 {
+    margin-bottom: 3vh;
+}
+
+#pink-block {
+    background-color: #FF2A6D;
+}
+
+footer {
+    background-color: #05D9E8;
+}
+/*****************
+PAGE FORMATTING
+******************/
+
+.page-title {
+    background-color: #FF2A6D;
+}
+
+.page-title h1 {
+    color: #FCF7F8;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 30px 0;
+}
+
+.page-content {
+    padding: 0 2vw 0 2vw;
+}
+
+/*****************
+FOOTER FORMATTING
+******************/
+footer a {
+    color: #FCF7F8;
+    text-decoration: none;
+}
+
+/** padding values lifted from original site at houseparty.com **/
+footer {
+    color: #FCF7F8;
+    display: flex;
+    padding: 2.9em;
+    padding-bottom: 2em;
+    font-size: .75em;
+} 
+
+/** padding values lifted from original site at houseparty.com **/
+.footer-col {
+    width: 11em;
+    margin-right: 1.4em;
+    margin-bottom: 1em;
+}
+
+/** code lifted from original site at houseparty.com 
+to just put white border on inner columns **/
+.footer-col:not(:last-child) {
+    border-right: 1px solid #FCF7F8;
+}
+
+footer h5 {
+    margin: 0;
+    margin-bottom: 1em; 
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: .35em;
+}
+
+/************************
+MOBILE FOOTER FORMATTING
+*************************/
+#mobile-footer {
+    display: none;
+    background-color: #FF2A6D;
+}
+
+#mobile-footer div {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+#mobile-footer a {
+    text-decoration: none; 
+    color: #FCF7F8;
+    font-weight: 900;
+    padding-left: 2vw;
+}
+
+#mobile-footer div:not(:first-child) {
+    border-top: solid 1px #FCF7F8;
+}
+
+/**********************************
+SMALL SCREEN MEDIA QUERY FORMATTING
+***********************************/
+@media only screen and (max-width: 850px) {
+    .block-row {
+        flex-direction: column;
+    }
+
+    .colorblock {
+        width: 100vw;
+        padding: 0vw;
+    }
+
+    #top-yellow-block, #white-block, #black-block {
+        font-size: 4vw;
+    }
+
+    #white-block h1, #black-block h1 {
+        padding-left: 3vw;
+    }
+
+    .block-row img {
+        height: 60vw;
+    }
+
+    nav div:nth-child(2) {
+        visibility: hidden; 
+    }
+
+    nav div:last-child {
+        display: block;
+        color: #FF2A6D;
+        padding-right: 3vw;
+        font-size: 140%;
+        transition: all .1s ease-in;
+    }
+
+    nav div:last-child a:hover {
+        color: #05D9E8;
+    }
+
+    /* height-changing inspiration from https://davidwalsh.name/css-slide */
+    input[type=checkbox]:checked ~ #menu {
+        z-index: 100;
+        opacity: 1;
+        height: 13vh;
+    }
+
+    input[type=checkbox]:checked ~ nav i{
+        color: #FDE74C;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #mobile-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

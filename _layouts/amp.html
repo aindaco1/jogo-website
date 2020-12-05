@@ -1,0 +1,138 @@
+---
+layout: amp
+---
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>
+      @font-face {
+          font-family: 'Noir Noir Regular';
+          font-style: normal;
+          font-weight: normal;
+          src: local('Noir Noir Regular'), url('assets/fonts/Noir_regular.woff') format('woff');
+      }
+          
+          
+      @font-face {
+          font-family: 'Noir Medium';
+          font-style: normal;
+          font-weight: normal;
+          src: local('Noir Medium'), url('assets/fonts/Noir_medium.woff') format('woff');
+      }
+      body {
+        font-family: "Noir Noir Regular", "Noir Medium", arial;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1, h3, h5, button {
+        font-family: 'Noir Medium', sans-serif;
+        font-weight: 900;
+      }
+
+      p, ul, a {
+        font-family: 'Noir Noir Regular', sans-serif;
+        font-weight: 400;  
+      }
+
+      .post-title {
+        text-align: center;
+      }
+
+      .category-name {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .header {
+        background: #000;
+        text-align: center;
+        color: white;
+        padding: 15px 0;
+        margin-bottom: 75px;
+      }
+
+      amp-img {
+        margin-bottom: 50px;
+      }
+
+      .content {
+        padding: 0 15px;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      .article {
+        position: relative;
+      }
+
+      .article-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-decoration: none;
+        font-size: 40px;
+        width: 100%;
+      }
+
+      .article-text .category-name {
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .article-text h5 {
+        margin: 0 0 15px 0;
+      }
+
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class='header'><h1>Jogo</h1></div>
+    <h1 class="post-title">
+      {{page.title}}
+    </h1>
+    <p class='category-name'>Tags: 
+      {% for category in page.categories %}
+        {{category | replace: "-", " "}}&nbsp;
+      {% endfor %}
+    </p>
+    <amp-img src="{{page.image}}" layout="responsive" height="300" width="500"></amp-img>
+    <div class='content'>
+      <h3 class='author center-text'>
+        by {{ page.author }}
+      </h3>
+      {{ content | markdownify | amp_images }}
+    </div>
+    <br>
+    <h3 class='center-text'>Recent Posts</h3>
+      {% assign counter=0 %}
+      {% for post in site.posts %}
+        {% if page != post and counter < 2%}
+          {% assign counter=counter | plus:1 %}   
+          <div class='article'>
+            <a href="{{ work.url | relative_url }}">
+              <amp-img src="{{ post.image }}"" alt="{{ post.title | escape }}" layout="responsive" height="300" width="500"></amp-img>
+              <div class='article-text center-text'>
+                <h5>{{post.title}}</h5>
+                <p class='category-name'>Tags: 
+                  {% for category in page.categories %}
+                    {{category | replace: "-", " "}}&nbsp;
+                  {% endfor %}
+                </p>
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+  </body>
+</html>
