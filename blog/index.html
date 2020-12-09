@@ -5,7 +5,11 @@ description: "Jogo writes about voice games and the voice industry"
 ---
 <div class="post-list">
   {% for post in paginator.posts %}
+    </br>
     <div class='row post-row'>
+      <div class="six columns">
+        <img class='img-responsive' src='{% if post.image%}{{post.image}}{% else %}/assets/img/logo.svg{% endif %}'>
+      </div>
       <article class="six columns">
         <p class='category-name'>
           {% for category in post.categories %}
@@ -17,8 +21,8 @@ description: "Jogo writes about voice games and the voice industry"
         </h4>
         <p>{{post.display_excerpt}}</p>
         <a class="post-link" href="{{ post.url | relative_url }}">READ MORE</a>
-        <hr>
         <p>By {{post.author}}</p>
+        <hr>
       </article>
     </div>
   {% endfor %}

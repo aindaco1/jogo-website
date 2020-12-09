@@ -198,6 +198,7 @@ COLORBLOCK FORMATTING
     background-color: #FDE74C;
     font-size: 3vw;
     flex-direction: column;
+    line-height: 1;
 }
 
 #top-yellow-block button {
@@ -207,7 +208,7 @@ COLORBLOCK FORMATTING
 }
 
 #top-yellow-block h1 {
-    margin-bottom: 3vh;
+    margin: 0 2vw 3vh 0;
 }
 
 #pink-block {
@@ -239,6 +240,14 @@ PAGE FORMATTING
 
 article {
     padding: 0 2vw 0 2vw;
+}
+
+.post-list {
+    padding: 2vw;
+}
+
+.post-list article {
+    padding: 0;
 }
 
 /*****************
@@ -283,7 +292,7 @@ footer ul {
 /**********************************
 SMALL SCREEN MEDIA QUERY FORMATTING
 ***********************************/
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1024px) {
     .block-row {
         flex-direction: column;
     }
@@ -361,4 +370,12 @@ PHONE MEDIA QUERY FORMATTING
         font-size: 7vw;
         padding: 0 8vw 0 8vw;
     }
+}
+
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+    display: block;
 }
