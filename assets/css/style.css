@@ -171,6 +171,10 @@ lifted from  original site at houseparty.com **/
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25em 1em;
 }
 
+figure {
+    overflow: scroll;
+}
+
 /********************
 COLORBLOCK FORMATTING
 *********************/
