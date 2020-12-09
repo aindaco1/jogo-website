@@ -298,7 +298,7 @@ SMALL SCREEN MEDIA QUERY FORMATTING
     }
 
     .colorblock {
-        width: 100vw;
+        width: 100%;
         padding: 0vw;
     }
 
@@ -366,9 +366,9 @@ PHONE MEDIA QUERY FORMATTING
     button {
         font-size: 80%;
     }
-    #top-yellow-block {
-        font-size: 7vw;
-        padding: 0 8vw 0 8vw;
+    #top-yellow-block h1 {
+        font-size: 10vw;
+        margin: 0 0 3vh 0;
     }
 }
 
