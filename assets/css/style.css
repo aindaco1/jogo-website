@@ -386,3 +386,14 @@ PHONE MEDIA QUERY FORMATTING
 	margin-left: auto;
     display: block;
 }
+
+@media not all and (min-resolution:.001dpcm)
+    { @supports (-webkit-appearance:none) {
+
+        #safari-fallback { 
+
+            visibility: visible; 
+
+        }
+    }
+}
