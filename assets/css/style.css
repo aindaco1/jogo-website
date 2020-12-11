@@ -242,6 +242,24 @@ PAGE FORMATTING
     padding: 0 2vw 0 2vw;
 }
 
+.page-content, .post-content {
+    font-size: 120%;
+}
+
+article::before {    
+    content: "";
+    background-image: url('/assets/img/soundwave-pink.svg');
+    background-size: inherit;
+    background-repeat: round;
+    position: absolute;
+    top: 20vh;
+    right: 0px;
+    bottom: -50vh;
+    left: 0px;
+    opacity: 0.04;
+    min-width: 375px;
+}
+
 article {
     padding: 0 2vw 0 2vw;
 }
@@ -252,6 +270,13 @@ article {
 
 .post-list article {
     padding: 0;
+}
+
+.category-name {
+    background-color: lightgrey;
+    border-radius: 1em;
+    padding: 0.5em;
+    width: max-content;
 }
 
 /*****************
@@ -380,7 +405,7 @@ PHONE MEDIA QUERY FORMATTING
 }
 
 .img-responsive {
-	max-width: 100%;
+	max-width: 400px;
 	height: auto;
 	margin-right: auto;
 	margin-left: auto;

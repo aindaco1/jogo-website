@@ -5,7 +5,7 @@ display_title: "Comparing String Lists in Python"
 description: "Understanding how to compare string lists in Python for software and web application development."
 date:   2017-03-16 00:00:00 -0700
 categories: web-development
-image: /assets/img/python.png
+image: /assets/img/sus2.svg
 display_excerpt: "A few weeks ago, I ran into an interesting problem on a Python Flask project. Thankfully, Python is pretty slick."
 author: Jay Renteria
 author-title: Senior Developer
