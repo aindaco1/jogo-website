@@ -254,10 +254,11 @@ article::before {
     position: absolute;
     top: 20vh;
     right: 0px;
-    bottom: -50vh;
+    bottom: 0px;
     left: 0px;
     opacity: 0.04;
     min-width: 375px;
+    z-index: 9999;
 }
 
 article {
