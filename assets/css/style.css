@@ -258,7 +258,7 @@ article::before {
     left: 0px;
     opacity: 0.04;
     min-width: 375px;
-    z-index: 9999;
+    z-index: -1;
 }
 
 article {
