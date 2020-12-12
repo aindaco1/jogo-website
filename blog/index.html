@@ -8,21 +8,22 @@ description: "Jogo writes about voice games and the voice industry"
   {% for post in paginator.posts %}
     </br>
     <div class='row post-row'>
-      <div class="six columns">
         <img class='img-responsive' src='{% if post.image%}{{post.image}}{% else %}/assets/img/logo.svg{% endif %}'>
-      </div>
-      <article class="six columns">
-        <p class='category-name'>
+      <article>
           {% for category in post.categories %}
-            {{category | replace: "-", " "}}&nbsp;
+            <a class='category-name'>
+              {{category | replace: "-", " "}}
+            </a>&nbsp;
           {% endfor %}
-        </p>
         <h4 class="post-title">
           <a href="{{ post.url | relative_url }}">{{ post.display_title | escape }}</a>
         </h4>
         <p>{{post.display_excerpt}}</p>
         <a class="post-link" href="{{ post.url | relative_url }}">READ MORE</a>
-        <p>By {{post.author}}</p>
+      </br>
+      {% if post.author %}
+          <p>By {{post.author}}</p>
+        {% endif %}
         <hr>
       </article>
     </div>

@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Web application development - Comparing string lists in Python"
-display_title: "Comparing String Lists in Python"
-description: "Understanding how to compare string lists in Python for software and web application development."
-date:   2017-03-16 00:00:00 -0700
-categories: web-development
+title:  "Susmongus is upon us!"
+display_title: "Susmongus is upon us!"
+description: "We built the first voice real-time assistant for Among Us. Try it out!"
+date:   2020-12-09 00:00:00 -0700
+categories: [among-us, video-games, alexa]
 image: /assets/img/sus2.svg
-display_excerpt: "A few weeks ago, I ran into an interesting problem on a Python Flask project. Thankfully, Python is pretty slick."
-author: Jay Renteria
-author-title: Senior Developer
+display_excerpt: "We built the first voice real-time assistant for Among Us. Try it out!"
+author: Alonso Indacochea
+author-title: Founder
 ---
 A few weeks ago, I ran into an interesting problem on a <a href="http://flask.pocoo.org/" target="_blank">Python Flask</a> project. An array of strings (in this case, email accounts) needed to be sorted - and if any of the strings contained specific words (like "test", for example), the associated user accounts needed to be modified slightly to indicate test user status.
 
@@ -30,6 +30,4 @@ if any(word in test['email'] for word in test_list):
 
 It's as simple as that. What `any()` does is it checks if any of the words in our test data 'email' match any words defined in our `test_list`. If so, we set `test_user` to true. 
 
-For more reading on the `any()` (and its cousin, `all()`) function in Python, check out <a href="https://leemendelowitz.github.io/blog/any-all-in-python.html" target="_blank">this excellent write-up</a> that goes into more detail. 
-
-
+For more reading on the `any()` (and its cousin, `all()`) function in Python, check out <a href="https://leemendelowitz.github.io/blog/any-all-in-python.html" target="_blank">this excellent write-up</a> that goes into more detail.

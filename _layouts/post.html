@@ -13,24 +13,26 @@ comments: true
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header center-text">
-      <h1 class="post-title" itemprop="name headline">{{ page.display_title | escape }}</h1>
-      <p class='category-name'>
-          {% for category in page.categories %}
-            {{category | replace: "-", " "}}&nbsp;
-          {% endfor %}
-        </p>
       <img src="{{ page.image }}"" class='post-image img-responsive' alt="{{ page.display_title | escape }}">
-    </header>
+      <p class='category-name'>
+        {% for category in page.categories %}
+          {{category | replace: "-", " "}}&nbsp;
+        {% endfor %}
+      </p>
+  </header>
 
     <div class="post-content" itemprop="articleBody">
       {{ content }}
     </div>
 
-    <p class="post-meta">By: <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span><br/>
-    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="title">{{ page.author-title }}</span></span></p>
+    {% if page.author %}
+      <p class="post-meta">By: <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span><br/>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="title">{{ page.author-title }}</span></span></p>
+    {% endif %}
 
     {% if site.disqus.shortname %}
       {% include disqus_comments.html %}
     {% endif %}
   </article>
+</br>
 </div>

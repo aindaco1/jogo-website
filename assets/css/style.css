@@ -16,12 +16,12 @@
 /*******************
 WHOLE SITE FORMATTING
 ********************/
-h1, h3, h5, button {
+h1, h3, h5, button, label, b {
     font-family: 'Noir Medium', sans-serif;
     font-weight: 900;
 }
 
-p, ul, a {
+p, ul, a, input, textarea, select, input[type=radio] + label, input[type=checkbox] + label {
     font-family: 'Noir Noir Regular', sans-serif;
     font-weight: 400;  
 }
@@ -115,17 +115,27 @@ nav div:nth-child(2) a:hover {
     transform: scale(1.01);
 }
 
-input[type=text] {
-    font-family: 'Roboto', sans-serif;
-    border: 2px solid #FF2A6D;
-    border-radius: 50px;
-    padding: .4vw;
+input[type=text], .container input[type=email], select, textarea {
+    border: 2px solid black;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    font-size: 100%;
+    max-width: 90vw;
+    margin: 0;
+    width: unset;
+}
+
+textarea {
+    width: 85%;
+    max-width: 80vw;
+    min-height: 200px;
+    padding: 1em 1em;
 }
 
 /**************
 HAMBURGER HACK
 ***************/
-input[type=checkbox] {
+header input[type=checkbox] {
     position: absolute;
     right: 2.8vw;
     top: 2.7vh;
@@ -192,7 +202,6 @@ input[type=email] {
     margin-bottom: 1vh;
     font-family: 'Noir Noir Regular', sans-serif;
     font-size: 40%;
-    text-align: left;
     width: 15vw;
     line-height: 2vh;
 }
@@ -283,7 +292,7 @@ article::before {
     bottom: 0px;
     left: 0px;
     opacity: 0.04;
-    min-width: 375px;
+    min-width: 320px;
     z-index: -1;
 }
 
