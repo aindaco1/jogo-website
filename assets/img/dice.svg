@@ -1,0 +1,44 @@
+<svg width="128" height="128" id="dice" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <animate xlink:href="#pip-center-center" attributeName="opacity" from="0" to="1" dur="2.5s" calcMode="discrete" fill="freeze" repeatCount="indefinite"
+      keyTimes="0; 0.083; 0.167; 0.25; 0.333; 0.416; 0.5; 0.583; 0.667; 0.75; 0.833; 0.916"
+      values="1; 1; 0; 1; 0; 0; 1; 1; 1; 0; 0; 0" />
+    
+    <animate xlink:href="#pip-top-left" attributeName="opacity" from="0" to="1" dur="2.5s" calcMode="discrete" fill="freeze" repeatCount="indefinite"
+      keyTimes="0; 0.083; 0.167; 0.25; 0.333; 0.416; 0.5; 0.583; 0.667; 0.75; 0.833; 0.916"
+      values="1; 0; 1; 0; 1; 0; 0; 1; 0; 0; 1; 1" />
+    
+    <animate xlink:href="#pip-top-right" attributeName="opacity" from="0" to="1" dur="2.5s" calcMode="discrete" fill="freeze" repeatCount="indefinite"
+      keyTimes="0; 0.083; 0.167; 0.25; 0.333; 0.416; 0.5; 0.583; 0.667; 0.75; 0.833; 0.916"
+      values="1; 1; 1; 0; 1; 1; 0; 1; 1; 1; 1; 1" />
+    
+    <animate xlink:href="#pip-center-left" attributeName="opacity" from="0" to="1" dur="2.5s" calcMode="discrete" fill="freeze" repeatCount="indefinite"
+      keyTimes="0; 0.083; 0.167; 0.25; 0.333; 0.416; 0.5; 0.583; 0.667; 0.75; 0.833; 0.916"
+      values="0; 0; 0; 0; 1; 0; 0; 0; 0; 0; 0; 1" />
+    
+    <animate xlink:href="#pip-center-right" attributeName="opacity" from="0" to="1" dur="2.5s" calcMode="discrete" fill="freeze" repeatCount="indefinite"
+      keyTimes="0; 0.083; 0.167; 0.25; 0.333; 0.416; 0.5; 0.583; 0.667; 0.75; 0.833; 0.916"
+      values="0; 0; 0; 0; 1; 0; 0; 0; 0; 0; 0; 1" />
+    
+    <animate xlink:href="#pip-bottom-left" attributeName="opacity" from="0" to="1" dur="2.5s" calcMode="discrete" fill="freeze" repeatCount="indefinite"
+      keyTimes="0; 0.083; 0.167; 0.25; 0.333; 0.416; 0.5; 0.583; 0.667; 0.75; 0.833; 0.916"
+      values="1; 1; 1; 0; 1; 1; 0; 1; 1; 1; 1; 1" />
+    
+    <animate xlink:href="#pip-bottom-right" attributeName="opacity" from="0" to="1" dur="2.5s" calcMode="discrete" fill="freeze" repeatCount="indefinite"
+      keyTimes="0; 0.083; 0.167; 0.25; 0.333; 0.416; 0.5; 0.583; 0.667; 0.75; 0.833; 0.916"
+      values="1; 0; 1; 0; 1; 0; 0; 1; 0; 0; 1; 1" />
+  </defs>
+  
+  <rect width="128" height="128" fill="#05D9E8" rx="8" />
+  <rect width="112" height="112" fill="#FF2A6D" x="8" y="8" rx="2" />
+
+  <g fill="#000" transform="translate(20, 20)">
+    <circle id="pip-center-center" cx="44" cy="44" r="10" fill="#05D9E8"/>
+    <circle id="pip-top-left" cx="10" cy="10" r="10" fill="#05D9E8"/>
+    <circle id="pip-top-right" cx="78" cy="10" r="10" fill="#05D9E8"/>
+    <circle id="pip-center-left" cx="10" cy="44" r="10" opacity="0" fill="#05D9E8"/>
+    <circle id="pip-center-right" cx="78" cy="44" r="10" opacity="0" fill="#05D9E8"/>
+    <circle id="pip-bottom-left" cx="10" cy="78" r="10" fill="#05D9E8"/>
+    <circle id="pip-bottom-right" cx="78" cy="78" r="10" fill="#05D9E8"/>
+  </g>
+</svg>

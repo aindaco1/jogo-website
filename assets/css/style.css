@@ -326,6 +326,10 @@ article {
     line-height: 8vh;
 }
 
+.post-header {
+    margin-top: 3vh;
+}
+
 /*****************
 FOOTER FORMATTING
 ******************/
