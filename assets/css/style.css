@@ -54,7 +54,8 @@ button:hover {
 	max-width: 400px;
 	height: auto;
 	margin-right: auto;
-	margin-left: auto;
+    margin-left: auto;
+    margin-bottom: 3vh;
     display: block;
 }
 
