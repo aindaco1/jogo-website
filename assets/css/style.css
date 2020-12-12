@@ -197,6 +197,7 @@ input[type=email] {
 
 input[type=email]::placeholder {
     text-align: left;
+
 }
 
 *:focus {
@@ -398,6 +399,8 @@ IPAD PRO MEDIA QUERY FORMATTING
 
     input[type=checkbox]:checked ~ nav i{
         color: #05D9E8;
+        transform: rotate(90deg);
+        transition: all .2s ease-in;
     }
 
     button {
@@ -414,6 +417,9 @@ IPAD PRO MEDIA QUERY FORMATTING
     input[type=email] {
         padding: 1vh 3vw;
     }
+    footer {
+        font-size: .7em;
+    }
 }
 
 /**********************************
@@ -422,6 +428,9 @@ IPAD MEDIA QUERY FORMATTING
 @media only screen and (max-width: 768px) {
     #sticky-button {
         margin-top: -6vh;
+    }
+    input[type=checkbox]:checked ~ #menu {
+        height: 12vh;
     }
 }
 
@@ -455,6 +464,9 @@ PHONE MEDIA QUERY FORMATTING
     }
     .site-title {
         display: none;
+    }
+    footer {
+        font-size: .55em;
     }
 }
 
