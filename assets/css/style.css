@@ -50,6 +50,14 @@ button:hover {
     box-shadow: 0 0.35em 0.85em rgba(0, 0, 0, 0.2);
 }
 
+.img-responsive {
+	max-width: 400px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+    display: block;
+}
+
 /**************
 NAV FORMATTING 
 ***************/
@@ -119,11 +127,12 @@ HAMBURGER HACK
 ***************/
 input[type=checkbox] {
     position: absolute;
-    right: 3.5vw;
-    top: 1.5vh;
+    right: 2.8vw;
+    top: 2.7vh;
     justify-content: flex-end;
     opacity: 0;
-}
+    height: 2em;
+    width: 2em;}
 
 #menu {
     position: absolute;
@@ -151,7 +160,7 @@ input[type=checkbox] {
 }
 
 #menu li:not(:first-child) {
-    border-top: solid 2px #FDE74C;
+    border-top: solid 2px #FCF7F8;
 }
 
 /**************
@@ -339,7 +348,7 @@ footer ul {
 }
 
 /**********************************
-SMALL SCREEN MEDIA QUERY FORMATTING
+IPAD PRO MEDIA QUERY FORMATTING
 ***********************************/
 @media only screen and (max-width: 1024px) {
     .block-row {
@@ -384,11 +393,11 @@ SMALL SCREEN MEDIA QUERY FORMATTING
     input[type=checkbox]:checked ~ #menu {
         z-index: 100;
         opacity: 1;
-        height: 13vh;
+        height: 11vh;
     }
 
     input[type=checkbox]:checked ~ nav i{
-        color: #FDE74C;
+        color: #05D9E8;
     }
 
     button {
@@ -405,7 +414,15 @@ SMALL SCREEN MEDIA QUERY FORMATTING
     input[type=email] {
         padding: 1vh 3vw;
     }
-    
+}
+
+/**********************************
+IPAD MEDIA QUERY FORMATTING
+***********************************/
+@media only screen and (max-width: 768px) {
+    #sticky-button {
+        margin-top: -6vh;
+    }
 }
 
 /**********************************
@@ -413,7 +430,7 @@ PHONE MEDIA QUERY FORMATTING
 ***********************************/
 @media only screen and (max-width: 450px) {
     #sticky-button {
-        margin-left: 36vw;
+        margin-left: 27vw;
     }
     button {
         font-size: 60%;
@@ -429,16 +446,21 @@ PHONE MEDIA QUERY FORMATTING
         margin-left: 6vw;
         font-size: 70%;
     }
+    input[type=checkbox] {
+        right: 2.8vw;
+        top: 2.3vh;
+    }
+    input[type=checkbox]:checked ~ #menu {
+        height: 14vh;
+    }
+    .site-title {
+        display: none;
+    }
 }
 
-.img-responsive {
-	max-width: 400px;
-	height: auto;
-	margin-right: auto;
-	margin-left: auto;
-    display: block;
-}
-
+/**********************************
+SAFARI ANIMATED SVG FALLBACK FORMATTING
+***********************************/
 @media not all and (min-resolution:.001dpcm)
     { @supports (-webkit-appearance:none) {
 
