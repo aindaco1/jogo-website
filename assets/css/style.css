@@ -186,18 +186,15 @@ figure {
 
 /** email capture input **/
 input[type=email] {
-    padding: 1vh 5vw 1vh 1vw;
+    padding: 1vh 1vw 1vh 1vw;
     border: none;
     border-radius: 3em;
     margin-bottom: 1vh;
     font-family: 'Noir Noir Regular', sans-serif;
     font-size: 40%;
     text-align: left;
-}
-
-input[type=email]::placeholder {
-    text-align: left;
-
+    width: 15vw;
+    line-height: 2vh;
 }
 
 *:focus {
@@ -415,7 +412,8 @@ IPAD PRO MEDIA QUERY FORMATTING
         font-size: 70%;
     }
     input[type=email] {
-        padding: 1vh 3vw;
+        padding: 1vh 1vw 1vh 3vw;
+        width: 30vw;
     }
     footer {
         font-size: .7em;
@@ -454,6 +452,8 @@ PHONE MEDIA QUERY FORMATTING
     input[type=email] {
         margin-left: 6vw;
         font-size: 70%;
+        line-height: 2.25vh;
+        width: 40vw;
     }
     input[type=checkbox] {
         right: 2.8vw;
