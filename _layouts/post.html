@@ -3,7 +3,7 @@ layout: default
 comments: true
 ---
 
-{%include header.html%}
+{% include header.html %}
 
 <div class="page-title">
 	<h1>{{ page.title | escape }}</h1>
@@ -14,24 +14,24 @@ comments: true
 
     <header class="post-header center-text">
       <img src="{{ page.image }}"" class='post-image img-responsive' alt="{{ page.display_title | escape }}">
-      <p class='category-name'>
-        {% for category in page.categories %}
-          {{category | replace: "-", " "}}&nbsp;
-        {% endfor %}
-      </p>
-  </header>
+      {% for category in page.categories %}
+        <a class='category-name'>
+          {{category | replace: "-", " "}}
+        </a>&nbsp;
+      {% endfor %}
+    </header>
 
     <div class="post-content" itemprop="articleBody">
       {{ content }}
     </div>
 
     {% if page.author %}
-      <p class="post-meta">By: <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span><br/>
+      <p class="post-meta">By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span><br/>
       <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="title">{{ page.author-title }}</span></span></p>
-    {% endif %}
+      {% endif %}
 
     {% if site.disqus.shortname %}
-      {% include disqus_comments.html %}
+      {% include disqus-comments.html %}
     {% endif %}
   </article>
 </br>

@@ -30,6 +30,7 @@ disqus:
 webmaster_verifications:
   google: sP3dYu3cLfVvtAPx-Occ9K4Z21-MbO2aPo6nlZZ0EYo
 logo: "/assets/img/logo.png"
+permalink: /:title:output_ext
 defaults:
   - scope:
       path: ""

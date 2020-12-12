@@ -22,9 +22,11 @@ description: "Jogo writes about voice games and the voice industry"
         <a class="post-link" href="{{ post.url | relative_url }}">READ MORE</a>
       </br>
       {% if post.author %}
-          <p>By {{post.author}}</p>
-        {% endif %}
-        <hr>
+        <p>By {{post.author}}</p>
+      {% else %}
+        <p></p>
+      {% endif %}
+      <hr>
       </article>
     </div>
   {% endfor %}

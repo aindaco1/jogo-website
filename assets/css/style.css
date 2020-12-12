@@ -140,9 +140,11 @@ header input[type=checkbox] {
     right: 2.8vw;
     top: 2.7vh;
     justify-content: flex-end;
+    z-index: 9999;
     opacity: 0;
     height: 2em;
-    width: 2em;}
+    width: 2em;
+}
 
 #menu {
     position: absolute;
@@ -154,6 +156,10 @@ header input[type=checkbox] {
     height: 0px;
     z-index: 0;
     transition: all .3s ease-in-out;
+}
+
+.page #menu, .post #menu {
+    background-color: #05D9E8;
 }
 
 #menu li, #menu a {
@@ -274,14 +280,14 @@ PAGE FORMATTING
 }
 
 .page-content {
-    padding: 0 2vw 0 2vw;
+    padding: 0 4vw 0 4vw;
 }
 
 .page-content, .post-content {
     font-size: 120%;
 }
 
-article::before {    
+article::before, .container::before {    
     content: "";
     background-image: url('/assets/img/soundwave-pink.svg');
     background-size: inherit;
@@ -300,12 +306,16 @@ article {
     padding: 0 2vw 0 2vw;
 }
 
-.post-list {
-    padding: 2vw;
+.post-list :last-child article hr {
+    display: none;
 }
 
 .post-list article {
     padding: 0;
+}
+
+.post-list {
+    margin-bottom: 3vh;
 }
 
 .category-name {
@@ -313,6 +323,7 @@ article {
     border-radius: 1em;
     padding: 0.5em;
     width: max-content;
+    line-height: 8vh;
 }
 
 /*****************
@@ -403,6 +414,10 @@ IPAD PRO MEDIA QUERY FORMATTING
         height: 11vh;
     }
 
+    input[type=checkbox] ~ nav i{
+        transition: all .2s ease-in;
+    }
+
     input[type=checkbox]:checked ~ nav i{
         color: #05D9E8;
         transform: rotate(90deg);
@@ -476,6 +491,13 @@ PHONE MEDIA QUERY FORMATTING
     }
     footer {
         font-size: .55em;
+    }
+    header input[type=checkbox] {
+        top: 1.5vh;
+    }
+    .category-name {
+        line-height: 9vh;
+        white-space: nowrap;
     }
 }
 
