@@ -54,7 +54,8 @@ button:hover {
 	max-width: 400px;
 	height: auto;
 	margin-right: auto;
-	margin-left: auto;
+    margin-left: auto;
+    margin-bottom: 3vh;
     display: block;
 }
 
@@ -140,7 +141,7 @@ header input[type=checkbox] {
     right: 2.8vw;
     top: 2.7vh;
     justify-content: flex-end;
-    z-index: 9999;
+    z-index: -1;
     opacity: 0;
     height: 2em;
     width: 2em;
@@ -326,6 +327,10 @@ article {
     line-height: 8vh;
 }
 
+.post-header {
+    margin-top: 3vh;
+}
+
 /*****************
 FOOTER FORMATTING
 ******************/
@@ -406,6 +411,10 @@ IPAD PRO MEDIA QUERY FORMATTING
     nav div:last-child a:hover {
         color: #05D9E8;
     }
+
+    header input[type=checkbox] {
+        z-index: 9999;
+    }    
 
     /* height-changing inspiration from https://davidwalsh.name/css-slide */
     input[type=checkbox]:checked ~ #menu {
@@ -512,5 +521,15 @@ SAFARI ANIMATED SVG FALLBACK FORMATTING
             visibility: visible; 
 
         }
+    }
+}
+
+/**********************************
+LANDSCAPE TABLET FORMATTING
+***********************************/
+
+@media only screen and (orientation: landscape) and (max-width: 1024px) {
+    #sticky-button {
+        margin-top: -5vw;
     }
 }
