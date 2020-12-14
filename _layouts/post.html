@@ -65,12 +65,11 @@ comments: true
         {% assign headerCounter = headerCounter | plus: 1 %}
         {% if maxRelatedCounter >= maxRelated %}
           {% break %}
-          </div>
         {% endif %}
       {% endif %}
     
     {% endfor %}
-        
+    </div>
     {% if site.disqus.shortname %}
       {% include disqus-comments.html %}
     {% endif %}
