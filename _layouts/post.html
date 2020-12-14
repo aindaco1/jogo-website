@@ -14,9 +14,9 @@ comments: true
 
     <header class="post-header center-text">
       <img src="{{ page.image }}"" class='post-image img-responsive' alt="{{ page.display_title | escape }}">
-      {% for category in page.categories %}
+      {% for tag in page.tags %}
         <a class='category-name'>
-          {{category | replace: "-", " "}}
+          {{tag | replace: "-", " "}}
         </a>&nbsp;
       {% endfor %}
     </header>
@@ -28,11 +28,52 @@ comments: true
     {% if page.author %}
       <p class="post-meta">By <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span><br/>
       <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="title">{{ page.author-title }}</span></span></p>
-      {% endif %}
+    {% endif %}
 
+    {% assign maxRelated = 4 %}
+    {% assign minCommonTags = 1 %}
+    {% assign maxRelatedCounter = 0 %}
+    {% assign headerCounter = 0 %}
+
+    {% for post in site.posts %}
+    
+      {% assign sameTagCount = 0 %}
+      {% assign commonTags = '' %}
+  
+      {% for tag in post.tags %}
+        {% if post.url != page.url %}
+          {% if page.tags contains tag %}
+            {% assign sameTagCount = sameTagCount | plus: 1 %}
+            {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+            {% assign commonTags = commonTags | append: tagmarkup %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if sameTagCount >= minCommonTags %}
+        {% if headerCounter == 0 %}
+          <div class="related-posts-header">
+            <h3>Related</h3>
+          </div>
+          <div class="related-posts">
+        {% endif %}
+            <div class="related-posts-box">
+              <a href="{{ site.baseurl }}{{ post.url }}"><img class="img-related" width="100%" src="{{post.image}}"></a>
+              <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+            </div>
+        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+        {% assign headerCounter = headerCounter | plus: 1 %}
+        {% if maxRelatedCounter >= maxRelated %}
+          {% break %}
+          </div>
+        {% endif %}
+      {% endif %}
+    
+    {% endfor %}
+        
     {% if site.disqus.shortname %}
       {% include disqus-comments.html %}
     {% endif %}
   </article>
-</br>
+  </br>
 </div>

@@ -59,6 +59,13 @@ button:hover {
     display: block;
 }
 
+.img-related {
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+    display: block;
+}
+
 /**************
 NAV FORMATTING 
 ***************/
@@ -329,6 +336,25 @@ article {
 
 .post-header {
     margin-top: 3vh;
+}
+
+.related-posts {
+    display: flex;
+}
+
+.related-posts-header {
+    margin-top: 6vh;
+}
+
+.related-posts-box {
+    max-width: 160px;
+    opacity: 0.8;
+    padding: 0 3vw;
+}
+
+.related-posts-box h5 {
+    display: table;
+    text-align: center;
 }
 
 /*****************
