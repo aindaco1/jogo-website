@@ -553,11 +553,17 @@ SAFARI ANIMATED SVG FALLBACK FORMATTING
 }
 
 /**********************************
-LANDSCAPE TABLET FORMATTING
+LANDSCAPE TABLET AND LOW HEIGHT FORMATTING
 ***********************************/
 
 @media only screen and (orientation: landscape) and (max-width: 1024px) {
     #sticky-button {
-        margin-top: -5vw;
+        margin-top: -2.7em;
+    }
+}
+
+@media only screen and (max-height: 800px) and (min-width: 1025px) {
+    #sticky-button {
+        margin-top: -2.7em;
     }
 }
