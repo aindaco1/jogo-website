@@ -67,6 +67,15 @@ button:hover {
     display: block;
 }
 
+.coming-soon {
+	max-width: 300px;
+	margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3vh;
+    display: block;
+    height: 75vh;
+}
+
 /**************
 NAV FORMATTING 
 ***************/
@@ -437,7 +446,7 @@ IPAD PRO MEDIA QUERY FORMATTING
     }
 
     nav div:last-child a:hover {
-        color: #05D9E8;
+        color: #d0f9fc;
     }
 
     header input[type=checkbox] {
