@@ -408,6 +408,10 @@ footer ul {
     margin-bottom: .35em;
 }
 
+.site-footer-mobile {
+    display: none;
+}
+
 /**********************************
 IPAD PRO MEDIA QUERY FORMATTING
 ***********************************/
@@ -492,6 +496,23 @@ IPAD PRO MEDIA QUERY FORMATTING
     .coming-soon {
         max-width: 700px;
     }
+    .site-footer-mobile {
+        display: flex;
+    }
+    .site-footer-mobile i {
+        font-size: 2.5em;
+    }
+    .site-footer-mobile .footer-col {
+        width: 20vw;
+        margin: auto;
+        border: none;
+    }
+    .site-footer-mobile ul {
+        margin: 0 0 0 6vw;
+    }
+    .site-footer {
+        display: none;
+    }
 }
 
 /**********************************
@@ -555,6 +576,9 @@ PHONE MEDIA QUERY FORMATTING
     .coming-soon {
         max-width: 300px;
     }
+    .site-footer-mobile ul {
+        margin: 0 0 0 4vw;
+    }
 }
 
 /**********************************
@@ -564,9 +588,7 @@ SAFARI ANIMATED SVG FALLBACK FORMATTING
     { @supports (-webkit-appearance:none) {
 
         #safari-fallback { 
-
             visibility: visible; 
-
         }
     }
 }
