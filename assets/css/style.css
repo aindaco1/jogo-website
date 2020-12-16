@@ -599,7 +599,7 @@ IPAD MEDIA QUERY FORMATTING
     .coming-soon {
         max-width: 400px;
     }
-    article, .page-content {
+    article, .page-content, .blog .page-content {
         padding: 0 8vw 0 8vw;
     }
 }
@@ -666,7 +666,7 @@ PHONE MEDIA QUERY FORMATTING
     .post-list {
         width: 100%;
     }
-    article, .page-content {
+    article, .page-content, .blog .page-content {
         padding: 0 2vw 0 2vw;
     }    
 }
