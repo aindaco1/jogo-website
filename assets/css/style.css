@@ -404,13 +404,15 @@ article {
 
 .thumbnail-column {
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .thumbnail-column img {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     max-width: 60%;
+    margin: auto;
 }
 
 .post-row {
@@ -653,10 +655,10 @@ PHONE MEDIA QUERY FORMATTING
     }
     .post-column {
         font-size: 80%;
-        width: 65%;
+        width: 70%;
     }
     .thumbnail-column {
-        width: 35%;
+        width: 30%;
     }
     .post-list {
         width: 100%;
