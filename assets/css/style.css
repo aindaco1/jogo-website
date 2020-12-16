@@ -76,6 +76,14 @@ button:hover {
     height: 75vh;
 }
 
+h1 a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 0;
+}
+
 /**************
 NAV FORMATTING 
 ***************/
@@ -150,6 +158,10 @@ textarea {
     padding: 1em 1em;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 /**************
 HAMBURGER HACK
 ***************/
@@ -172,7 +184,7 @@ header input[type=checkbox] {
     text-align: center;
     width: 100%;
     height: 0px;
-    z-index: 0;
+    z-index: -1;
     transition: all .3s ease-in-out;
 }
 
@@ -289,14 +301,14 @@ PAGE FORMATTING
 
 .page-title {
     background: linear-gradient(33.77deg, #FF2A6D 26.12%, #FDE74C 100%);
-    padding: 0 2vw 0 2vw;
+    padding: 0 2vw 2vw;
 }
 
 .page-title h1 {
     color: #FCF7F8;
     text-align: center;
     margin: 0;
-    padding: 50px 0 50px 0;
+    padding: 50px 0 20px 0;
 }
 
 .page-content {
@@ -331,11 +343,24 @@ article {
 }
 
 .post-list article {
-    padding: 0;
+    padding: 1em;
 }
 
 .post-list {
-    margin-bottom: 3vh;
+    margin: 0 auto 3vh;
+    width: 80%;
+}
+
+.post-list .post-row:nth-child(3n+3) {
+    background-color: #FDE74CF2;
+}
+
+.post-list .post-row:nth-child(3n+1) {
+    background-color:  #FF2A6DF2;
+}
+
+.post-list .post-row:nth-child(3n+2) {
+    background-color: #05D9E8CC;
 }
 
 .category-name {
@@ -367,6 +392,44 @@ article {
 .related-posts-box h5 {
     display: table;
     text-align: center;
+}
+
+.post-column {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.thumbnail-column {
+    width: 40%;
+}
+
+.thumbnail-column img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 60%;
+}
+
+.post-row {
+    display: flex;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    min-height: 500px;
+}
+
+.post-row h5 {
+    margin: 0 0 0.3em 0;
+    text-transform: uppercase;
+}
+
+.post-list button {
+    background-color: #FCF7F8;
+}
+
+form button {
+    color:  #FCF7F8;
 }
 
 /*****************
@@ -513,6 +576,12 @@ IPAD PRO MEDIA QUERY FORMATTING
     .site-footer {
         display: none;
     }
+    .post-row {
+        min-height: 305px;
+    }
+    .post-list {
+        width: 90%;
+    }
 }
 
 /**********************************
@@ -582,6 +651,16 @@ PHONE MEDIA QUERY FORMATTING
     .site-footer-mobile ul {
         margin: 0 0 0 4vw;
     }
+    .post-column {
+        font-size: 80%;
+        width: 65%;
+    }
+    .thumbnail-column {
+        width: 35%;
+    }
+    .post-list {
+        width: 100%;
+    }
 }
 
 /**********************************
@@ -610,4 +689,80 @@ LANDSCAPE TABLET AND LOW HEIGHT FORMATTING
     #sticky-button {
         margin-top: -2.7em;
     }
+}
+
+/**********************************
+SHARE BUTTON FORMATTING
+***********************************/
+
+#share-buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#share-buttons:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#share-buttons > div {
+    position: relative;
+    text-align: left; 
+    height: 36px; 
+    width: 50px; 
+    text-align: center;
+}
+#share-buttons > div > svg {
+    height: 16px;
+    fill: #FCF7F8;
+}
+#share-buttons > div:hover {
+    cursor: pointer;
+}
+#share-buttons > div.facebook:hover > svg {
+    fill: #3B5998;
+}
+#share-buttons > div.twitter:hover > svg {
+    fill: #55ACEE;
+}
+#share-buttons > div.linkedin:hover > svg {
+    fill: #0077b5;
+}
+#share-buttons > div.pinterest:hover > svg {
+    fill: #CB2027;
+}
+#share-buttons > div.gplus:hover > svg {
+    fill: #dd4b39;
+}
+#share-buttons > div.mail:hover > svg {
+    fill: #7D7D7D;
+}
+#share-buttons > div.instagram:hover > svg {
+    fill: #C73B92;
+}
+#share-buttons > div.facebook > svg {
+    height: 18px;
+    margin-top: 9px;
+}
+#share-buttons > div.twitter > svg {
+    height: 20px;
+    margin-top: 8px;
+}
+#share-buttons > div.linkedin > svg {
+    height: 19px;
+    margin-top: 7px;
+}
+#share-buttons > div.pinterest > svg {
+    height: 20px;
+    margin-top: 9px;
+}
+#share-buttons > div.gplus > svg {
+    height: 17px;
+    margin-top: 9px;
+    position: relative;
+    left: 1px;
+}
+#share-buttons > div.mail > svg {
+    height: 14px;
+    margin-top: 11px;
 }

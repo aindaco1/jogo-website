@@ -1,35 +1,30 @@
 ---
 layout: page
 title: "Blog"
+permalink: /blog/
 description: "Jogo writes about voice games and the voice industry"
 ---
 
 <div class="post-list">
   {% for post in paginator.posts %}
     </br>
-    <div class='row post-row'>
-      <a href="{{ post.url | relative_url }}">
-        <img class='img-responsive' src='{% if post.image%}{{post.image}}{% else %}/assets/img/logo.svg{% endif %}'>
-      </a>
-      <article>
-          {% for tag in post.tags %}
-            <a class='category-name'>
-              {{tag | replace: "-", " "}}
-            </a>&nbsp;
-          {% endfor %}
-        <h4 class="post-title">
-          <a href="{{ post.url | relative_url }}">{{ post.display_title | escape }}</a>
-        </h4>
-        <p>{{post.display_excerpt}}</p>
-        <a class="post-link" href="{{ post.url | relative_url }}">READ MORE</a>
-      </br>
-      {% if post.author %}
-        <p>By {{post.author}}</p>
-      {% else %}
-        <p></p>
-      {% endif %}
-      <hr>
-      </article>
+    <div class='post-row'>
+      <div class="thumbnail-column">
+        <a href="{{ post.url | relative_url }}">
+          <img class='img-responsive' src='{% if post.image%}{{post.image}}{% else %}/assets/img/logo.svg{% endif %}'>
+        </a>
+      </div>
+      <div class="post-column">
+        <article>
+          <h1 class="post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.display_title | escape }}</a>
+          </h1>
+          <h5>{{post.date | date: "%B %-d, %Y"}}</h5>
+          <p>{{post.display_excerpt}}</p>
+          <a class="post-link" href="{{ post.url | relative_url }}"><button>READ MORE</button></a>
+          </br>
+        </article>
+      </div>
     </div>
   {% endfor %}
 </div>

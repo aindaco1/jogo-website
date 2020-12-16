@@ -8,10 +8,10 @@
         <a href="{{ "/" | relative_url}}"><img src="/assets/img/logo.svg" alt="Jogo logo"></a> &nbsp;
         <a class="site-title" href="{{ "/" | relative_url}}">{{ site.display_title | escape }}</a>
       </div>
-
       <div>
-          <a href="/faq/">FAQ</a>
-          <a href="/blog/">Blog</a>
+        {% assign current = page.url | downcase | split: '/' %}
+        <a href='/faq/' {% if current[1] == 'faq' %}class='active'{% endif %}>FAQ</a>
+        <a href='/blog/' {% if current[1] == 'blog' %}class='active'{% endif %}>Blog</a>
       </div>
 
       <div>
