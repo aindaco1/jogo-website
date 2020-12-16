@@ -68,7 +68,7 @@ button:hover {
 }
 
 .coming-soon {
-	max-width: 900px;
+	max-width: 100%;
 	margin-right: auto;
     margin-left: auto;
     margin-bottom: 3vh;
@@ -558,9 +558,6 @@ IPAD PRO MEDIA QUERY FORMATTING
     footer {
         font-size: .7em;
     }
-    .coming-soon {
-        max-width: 700px;
-    }
     .site-footer-mobile {
         display: flex;
     }
@@ -595,9 +592,6 @@ IPAD MEDIA QUERY FORMATTING
     }
     input[type=checkbox]:checked ~ #menu {
         height: 12vh;
-    }
-    .coming-soon {
-        max-width: 400px;
     }
     article, .page-content, .blog .page-content {
         padding: 0 8vw 0 8vw;
@@ -649,9 +643,6 @@ PHONE MEDIA QUERY FORMATTING
     .category-name {
         line-height: 9vh;
         white-space: nowrap;
-    }
-    .coming-soon {
-        max-width: 300px;
     }
     .site-footer-mobile ul {
         margin: 0 0 0 4vw;
