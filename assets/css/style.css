@@ -155,13 +155,13 @@ HAMBURGER HACK
 ***************/
 header input[type=checkbox] {
     position: absolute;
-    right: 2.8vw;
-    top: 2.7vh;
+    right: 2vw;
+    top: 24px;
     justify-content: flex-end;
     z-index: -1;
     opacity: 0;
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
 }
 
 #menu {
@@ -567,7 +567,10 @@ PHONE MEDIA QUERY FORMATTING
         font-size: .55em;
     }
     header input[type=checkbox] {
-        top: 1.5vh;
+        top: 2px;
+        right: 2vw;
+        height: 3.5em;
+        width: 3em;
     }
     .category-name {
         line-height: 9vh;
