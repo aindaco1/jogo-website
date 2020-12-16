@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body id='body' class="{{ page.layout | default: "default" }}" onscroll="scroll()" onload="bodyOnLoad()">
+  <body id='body' class="{{ page.layout | default: "default" }} {{ page.title | replace: " ", "-" | remove: "!" | downcase }}" onscroll="scroll()" onload="bodyOnLoad()">
 
     <main id="page-content" aria-label="Content">
         {{ content }}

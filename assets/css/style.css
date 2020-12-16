@@ -311,10 +311,6 @@ PAGE FORMATTING
     padding: 50px 0 20px 0;
 }
 
-.page-content {
-    padding: 0 4vw 0 4vw;
-}
-
 .page-content, .post-content {
     font-size: 120%;
 }
@@ -334,8 +330,12 @@ article::before, .container::before {
     z-index: -1;
 }
 
-article {
-    padding: 0 2vw 0 2vw;
+article, .page-content {
+    padding: 0 15vw 0 15vw;
+}
+
+.blog .page-content {
+    padding: 0;
 }
 
 .post-list :last-child article hr {
@@ -599,6 +599,9 @@ IPAD MEDIA QUERY FORMATTING
     .coming-soon {
         max-width: 400px;
     }
+    article, .page-content {
+        padding: 0 8vw 0 8vw;
+    }
 }
 
 /**********************************
@@ -663,6 +666,9 @@ PHONE MEDIA QUERY FORMATTING
     .post-list {
         width: 100%;
     }
+    article, .page-content {
+        padding: 0 2vw 0 2vw;
+    }    
 }
 
 /**********************************
