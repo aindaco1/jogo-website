@@ -38,7 +38,7 @@ button {
     border: none;
     border-radius: 3em;
     background-color: #FF2A6D;
-    color: #FCF7F8;
+    color: #01012B;
     font-size: 100%;
     box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.1);
     transition: transform .3s ease-out, box-shadow .3s ease-out;
@@ -267,6 +267,7 @@ COLORBLOCK FORMATTING
 
 #top-yellow-block button {
     font-size: 55%;
+    color: #FCF7F8;
     margin-top: 0;
     margin-bottom: 3vh;
 }
@@ -372,13 +373,13 @@ article {
 FOOTER FORMATTING
 ******************/
 footer a {
-    color: #FCF7F8;
+    color: #01012B;
     text-decoration: none;
 }
 
 /** padding values lifted from original site at houseparty.com **/
 footer {
-    color: #FCF7F8;
+    color: #01012B;
     display: flex;
     padding: 2vw;
     font-size: .75em;
