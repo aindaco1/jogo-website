@@ -5,28 +5,31 @@ permalink: /blog/
 description: "Jogo writes about voice games and the voice industry"
 ---
 
-<div class="post-list">
-  {% for post in paginator.posts %}
-    </br>
-    <div class='post-row'>
-      <div class="thumbnail-column">
-        <a href="{{ post.url | relative_url }}">
-          <img class='img-responsive' src='{% if post.image%}{{post.image}}{% else %}/assets/img/logo.svg{% endif %}'>
-        </a>
-      </div>
-      <div class="post-column">
-        <article>
-          <h1 class="post-title">
-            <a href="{{ post.url | relative_url }}">{{ post.display_title | escape }}</a>
-          </h1>
-          <h5>{{post.date | date: "%B %-d, %Y"}}</h5>
-          <p>{{post.display_excerpt}}</p>
-          <a class="post-link" href="{{ post.url | relative_url }}"><button>READ MORE</button></a>
-          </br>
-        </article>
+<div class="container">
+  <div class="grid-row">
+    {% for post in paginator.posts %}
+    <div class="grid-item">
+      <a class="wrapping-link" href="{{ post.url | relative_url }}"></a>
+      <div class="grid-item-wrapper">
+        <div class="grid-item-container">
+          <div class="grid-image-top">
+            <img class='img-responsive' src='{% if post.image%}{{post.image}}{% else %}/assets/img/logo.svg{% endif %}'>
+          </div>
+          <div class="grid-item-content">
+            <h3>
+              <a href="{{ post.url | relative_url }}">{{ post.display_title | escape }}</a>
+            </h3>
+            <h5>{{post.date | date: "%B %-d, %Y"}}</h5>
+            <p class="item-excerpt">{{post.display_excerpt}}</p>
+          </div>
+          <div class="grid-item-button">
+            <a class="post-link" href="{{ post.url | relative_url }}"><button>READ MORE</button></a>
+          </div>
+        </div>
       </div>
     </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
 
 {% if paginator.total_pages > 1 %}

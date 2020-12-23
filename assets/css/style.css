@@ -68,11 +68,15 @@ button:hover {
 }
 
 .coming-soon {
-	max-width: 100%;
+	max-width: 95%;
 	margin-right: auto;
     margin-left: auto;
     margin-bottom: 3vh;
     display: block;
+    height: 40vh;
+}
+
+.page .coming-soon {
     height: 75vh;
 }
 
@@ -225,6 +229,7 @@ lifted from  original site at houseparty.com **/
     margin-top: -5.5vh;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25em 1em;
     cursor: pointer;
+    z-index: 3;
 }
 
 figure {
@@ -330,37 +335,8 @@ article::before, .container::before {
     z-index: -1;
 }
 
-article, .page-content {
-    padding: 0 15vw 0 15vw;
-}
-
 .blog .page-content {
     padding: 0;
-}
-
-.post-list :last-child article hr {
-    display: none;
-}
-
-.post-list article {
-    padding: 1em;
-}
-
-.post-list {
-    margin: 0 auto 3vh;
-    width: 80%;
-}
-
-.post-list .post-row:nth-child(3n+3) {
-    background-color: #FDE74CF2;
-}
-
-.post-list .post-row:nth-child(3n+1) {
-    background-color:  #FF2A6DF2;
-}
-
-.post-list .post-row:nth-child(3n+2) {
-    background-color: #05D9E8CC;
 }
 
 .category-name {
@@ -394,46 +370,157 @@ article, .page-content {
     text-align: center;
 }
 
-.post-column {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-.thumbnail-column {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-.thumbnail-column img {
-    max-width: 60%;
-    margin: auto;
-}
-
-.post-row {
-    display: flex;
-    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    min-height: 500px;
-}
-
-.post-row h5 {
-    margin: 0 0 0.3em 0;
-    text-transform: uppercase;
-}
-
-.post-list button {
-    background-color: #FCF7F8;
+.related-posts-box a {
+    text-decoration: none;
 }
 
 form button {
     color:  #FCF7F8;
 }
 
+/*****************
+BLOG INDEX STYLING
+*****************/
+
+.container {
+    margin: 3vh auto 3vh;
+    width: 85%;
+}
+  
+.grid-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.grid-row .grid-item:nth-child(3n+3) .grid-item-wrapper {
+    background-color: #FDE74CF2;
+}
+
+.grid-row .grid-item:nth-child(3n+1) .grid-item-wrapper {
+    background-color:  #FF2A6DAA;
+}
+
+.grid-row .grid-item:nth-child(3n+3) {
+    padding-right: 0;
+}
+
+.grid-row .grid-item:nth-child(3n+1) {
+    padding-left: 0;
+}
+
+.grid-row .grid-item:nth-child(3n+2) .grid-item-wrapper {
+    background-color: #05D9E8CC;
+}
+
+.grid-item {
+    min-height: 400px;
+    flex-basis: 33.3%;
+    -ms-flex: auto;
+    position: relative;
+    padding: 1vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+  
+.grid-row a {
+    text-decoration: none;
+}
+  
+.wrapping-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    color: currentColor;
+}
+  
+.grid-item-wrapper {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+    transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+    position: relative;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+  
+.grid-item-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+  
+.grid-image-top {
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+  
+.grid-image-top .centered {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 54.5%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    background-position: center;
+}
+    
+.grid-item-content {
+    padding: 0 2vh 7vh 2vh;
+}
+  
+.grid-item-content h3 {
+    font-weight: 700;
+    margin-bottom: 18px;
+    display: block;
+}
+  
+.grid-item-content h5 {
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+  
+.item-excerpt {
+    margin-bottom: 20px;
+    display: block;
+}
+  
+.container button {
+    background-color: #FCF7F8;
+}
+
+.grid-item-button {
+    position: absolute;
+    bottom: 1vh;
+    right: 1vh;
+}
+
+.grid-item:hover .grid-item-wrapper {
+    padding: 1% 1%;
+    margin: -1% -1%;
+}
+  
 /*****************
 FOOTER FORMATTING
 ******************/
@@ -575,12 +662,33 @@ IPAD PRO MEDIA QUERY FORMATTING
     .site-footer {
         display: none;
     }
-    .post-row {
-        min-height: 305px;
+    .grid-item {
+        flex-basis: 50%;
     }
-    .post-list {
+    .grid-image-top {
+        height: 20vh;
+    }
+    .container {
         width: 90%;
     }
+    .grid-row .grid-item:nth-child(2n+2) {
+        padding-right: 0;
+    }   
+    .grid-row .grid-item:nth-child(2n+1) {
+        padding-left: 0;
+    }
+    .grid-row .grid-item:nth-child(3n+5) {
+        clear: none;
+    } 
+    .grid-row .grid-item:nth-child(3n+4) {
+        padding-right: 1vh;
+    }
+    .grid-row .grid-item:nth-child(2n+4) {
+        clear: both;
+    } 
+    .grid-row .grid-item:nth-child(2n+3) {
+        padding-right: 1vh;
+    } 
 }
 
 /**********************************
@@ -592,9 +700,6 @@ IPAD MEDIA QUERY FORMATTING
     }
     input[type=checkbox]:checked ~ #menu {
         height: 12vh;
-    }
-    article, .page-content, .blog .page-content {
-        padding: 0 8vw 0 8vw;
     }
 }
 
@@ -647,19 +752,28 @@ PHONE MEDIA QUERY FORMATTING
     .site-footer-mobile ul {
         margin: 0 0 0 4vw;
     }
-    .post-column {
-        font-size: 80%;
-        width: 70%;
+    .container {
+        width: 90%;
     }
-    .thumbnail-column {
-        width: 30%;
+    .grid-item {
+        flex-basis: 100%;
+        flex-flow: column;
+        padding: 0 0 3vh 0;
     }
-    .post-list {
-        width: 100%;
+    .grid-image-top {
+        height: 30vh;
     }
-    article, .page-content, .blog .page-content {
-        padding: 0 5vw 0 5vw;
-    }    
+    .coming-soon {
+        max-width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 3vh;
+        display: block;
+        height: 30vh;
+    }
+    .img-responsive {
+        max-width: 50%;
+    }
 }
 
 /**********************************
