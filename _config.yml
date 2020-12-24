@@ -17,6 +17,8 @@ title: Jogo - Create voice games
 display_title: Jogo
 seo:
   name: Jogo - Create voice games
+  image:
+    width: 630
 email: info@jogo.gg
 description: > # this means to ignore newlines until "baseurl:"
   Jogo makes creating voice games fun.
@@ -36,9 +38,6 @@ defaults:
       path: ""
     values:
       image: /assets/img/logo.png
-image:
-  height: 250
-  width: 250
 # Build settings
 markdown: kramdown
 theme: minima
