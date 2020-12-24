@@ -3,7 +3,8 @@ layout: post
 title:  "Tabletop Game Alexa Playtest"
 display_title: "Tabletop Game Alexa Playtest"
 description: "You've been invited to help us playtest tabletop games!"
-date:   2020-10-16 00:12:29 +0200
+date:   2020-10-16 00:12:29 -0700
+last_modified_at: 2020-12-23 23:12:29 -0700
 tags: [tabletop, alexa]
 image: /assets/img/dice.png
 image_svg: /assets/img/dice.svg

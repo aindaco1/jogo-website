@@ -3,7 +3,8 @@ layout: post
 title:  "Among Us Survey #1"
 display_title: "Among Us Survey #1"
 description: "We're building a real-time assistant for Among Us! Please fill out the survey so we know what to build first."
-date:   2020-11-26 00:12:29 +0200
+date:   2020-11-26 00:12:29 -0700
+last_modified_at: 2020-12-23 23:12:29 -0700
 tags: [among-us, video-games, alexa]
 image: /assets/img/sus.png
 image_svg: /assets/img/sus2.svg

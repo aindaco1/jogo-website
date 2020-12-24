@@ -25,4 +25,6 @@ group :jekyll_plugins do
    gem "amp-jekyll"
    gem "jekyll-seo-tag"
    gem "jekyll-redirect-from"
+   gem 'jekyll-compose'
+   gem 'jekyll-sitemap'
 end
