@@ -16,8 +16,8 @@ comments: true
     <header class="post-header center-text">
       <img src="{{ page.image_svg }}" class='post-image img-responsive' alt="{{ page.display_title | escape }}">
       {% for tag in page.tags %}
-        <a class='category-name'>
-          {{tag | replace: "-", " "}}
+        <a href="{{ site.baseurl | append: "/tag/" | append: tag }}" class='category-name'>
+          {{tag | replace: "-", " " | capitalize_all }}
         </a>&nbsp;
       {% endfor %}
     </header>

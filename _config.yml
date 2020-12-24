@@ -52,6 +52,12 @@ jekyll_compose:
       sitemap: true
       tags: []
       display_excerpt: ""
+jekyll-archives:
+  enabled:
+    - tags
+  layout: tag
+  permalinks:
+    tag: '/tag/:name/'
 # Build settings
 markdown: kramdown
 theme: minima
@@ -63,6 +69,7 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-compose
+  - jekyll-archives
 exclude:
   - Gemfile
   - Gemfile.lock

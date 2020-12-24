@@ -352,6 +352,7 @@ article::before, .container::before {
     padding: 0.5em;
     width: max-content;
     line-height: 8vh;
+    text-decoration: none;
 }
 
 .post-header {
