@@ -13,7 +13,7 @@ description: "Our thoughts on voice games and the voice industry. And also annou
       <div class="grid-item-wrapper">
         <div class="grid-item-container">
           <div class="grid-image-top">
-            <img class='img-responsive' src='{% if post.image_svg%}{{post.image_svg}}{% else %}/assets/img/logo.svg{% endif %}'>
+            <img class='img-responsive' src='{% if post.image_svg%}{{post.image_svg}}{% else %}/assets/img/logo.svg{% endif %}' alt="{{ post.display_title | escape }}">
           </div>
           <div class="grid-item-content">
             <h3>
