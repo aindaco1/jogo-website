@@ -31,6 +31,7 @@ p, ul, a, input, textarea, select, input[type=radio] + label, input[type=checkbo
 body {
     margin: 0;
     padding: 0;
+    overscroll-behavior-y: none;
 }
 
 /** padding, font-size, and border-radius, transition and box-shadow
