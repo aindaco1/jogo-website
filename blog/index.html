@@ -9,7 +9,7 @@ description: "Our thoughts on voice games and the voice industry. And also annou
   <div class="grid-row">
     {% for post in paginator.posts %}
     <div class="grid-item">
-      <a class="wrapping-link" href="{{ post.url | relative_url }}" aria-label="read more"></a>
+      <a class="wrapping-link" href="{{ post.url | relative_url }}" aria-label="{{ post.display_title | append: " link" }}"></a>
       <div class="grid-item-wrapper">
         <div class="grid-item-container">
           <div class="grid-image-top">
@@ -23,7 +23,7 @@ description: "Our thoughts on voice games and the voice industry. And also annou
             <p class="item-excerpt">{{post.display_excerpt}}</p>
           </div>
           <div class="grid-item-button">
-            <a class="post-link" href="{{ post.url | relative_url }}" aria-label="read more"><button>READ MORE</button></a>
+            <a class="post-link" href="{{ post.url | relative_url }}" aria-label="{{ post.display_title | append: " read more link" }}"><button>READ MORE</button></a>
           </div>
         </div>
       </div>

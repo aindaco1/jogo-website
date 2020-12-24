@@ -59,7 +59,7 @@ comments: true
           <div class="related-posts">
         {% endif %}
             <div class="related-posts-box">
-              <a href="{{ site.baseurl }}{{ post.url }}"><img class="img-related" width="100%" src="{{post.image_svg}}" alt="{{ page.display_title | escape }}"></a>
+              <a href="{{ site.baseurl }}{{ post.url }}"><img class="img-related" width="100%" src="{{post.image_svg}}" alt="{{ page.display_title | append: " image link" }}"></a>
               <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
             </div>
         {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
