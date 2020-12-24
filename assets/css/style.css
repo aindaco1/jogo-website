@@ -195,7 +195,7 @@ header input[type=checkbox] {
     display: inline-block;
 }
 
-.page #menu, .post #menu {
+.page #menu, .post #menu, .tag #menu {
     background-color: #05D9E8;
 }
 
