@@ -9,6 +9,7 @@ tags: [tabletop, alexa]
 image: /assets/img/dice.png
 image_svg: /assets/img/dice.svg
 display_excerpt: "You've been invited to help us playtest tabletop games!"
+sitemap: true
 comments: false
 ---
 You've been invited to help us playtest tabletop games! Please fill out the survey below after you've completed one playthrough.

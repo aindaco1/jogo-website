@@ -8,6 +8,7 @@ last_modified_at: 2020-12-23 23:12:29 -0700
 tags: [among-us, video-games, alexa]
 image: /assets/img/sus.png
 image_svg: /assets/img/sus2.svg
+sitemap: true
 display_excerpt: "We built the first voice real-time assistant for Among Us. Try it out!"
 author: Alonso Indacochea
 author-title: Founder

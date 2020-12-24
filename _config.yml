@@ -52,7 +52,6 @@ jekyll_compose:
       sitemap: true
       tags: []
       display_excerpt: ""
-      comments: true
 # Build settings
 markdown: kramdown
 theme: minima

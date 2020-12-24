@@ -9,6 +9,7 @@ tags: [among-us, video-games, alexa]
 image: /assets/img/sus.png
 image_svg: /assets/img/sus2.svg
 display_excerpt: "We're building a real-time assistant for Among Us! Please fill out the survey so we know what to build first."
+sitemap: true
 comments: false
 ---
 We're building a real-time assistant for Among Us! Please fill out the survey so we know what to build first.
