@@ -5,7 +5,8 @@ display_title: "Tabletop Game Alexa Playtest"
 description: "You've been invited to help us playtest tabletop games!"
 date:   2020-10-16 00:12:29 +0200
 tags: [tabletop, alexa]
-image: /assets/img/dice.svg
+image: /assets/img/dice.png
+image_svg: /assets/img/dice.svg
 display_excerpt: "You've been invited to help us playtest tabletop games!"
 comments: false
 ---

@@ -5,7 +5,8 @@ display_title: "Susmongus is upon us!"
 description: "We built the first voice real-time assistant for Among Us. Try it out!"
 date:   2020-12-09 00:00:00 -0700
 tags: [among-us, video-games, alexa]
-image: /assets/img/sus2.svg
+image: /assets/img/sus.png
+image_svg: /assets/img/sus2.svg
 display_excerpt: "We built the first voice real-time assistant for Among Us. Try it out!"
 author: Alonso Indacochea
 author-title: Founder

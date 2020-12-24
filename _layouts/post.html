@@ -14,7 +14,7 @@ comments: true
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header center-text">
-      <img src="{{ page.image }}"" class='post-image img-responsive' alt="{{ page.display_title | escape }}">
+      <img src="{{ page.image_svg }}"" class='post-image img-responsive' alt="{{ page.display_title | escape }}">
       {% for tag in page.tags %}
         <a class='category-name'>
           {{tag | replace: "-", " "}}
@@ -59,7 +59,7 @@ comments: true
           <div class="related-posts">
         {% endif %}
             <div class="related-posts-box">
-              <a href="{{ site.baseurl }}{{ post.url }}"><img class="img-related" width="100%" src="{{post.image}}"></a>
+              <a href="{{ site.baseurl }}{{ post.url }}"><img class="img-related" width="100%" src="{{post.image_svg}}"></a>
               <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
             </div>
         {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
