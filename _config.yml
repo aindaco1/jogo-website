@@ -36,6 +36,9 @@ defaults:
       path: ""
     values:
       image: /assets/img/logo.png
+image:
+  height: 250
+  width: 250
 # Build settings
 markdown: kramdown
 theme: minima
