@@ -541,7 +541,7 @@ footer {
     color: #01012B;
     display: flex;
     padding: 2vw;
-    font-size: .75em;
+    font-size: 1em;
 } 
 
 /** padding values lifted from original site at houseparty.com **/
