@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jogo.gg" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jogogoodgame
 timezone: America/Denver
+future: true
 paginate: 6
 paginate_path: "blog/:num/"
 disqus:
@@ -52,16 +53,14 @@ jekyll_compose:
       sitemap: true
       tags: []
       display_excerpt: ""
-jekyll-archives:
-  enabled:
-    - tags
-  layout: tag
-  permalinks:
-    tag: '/tag/:name/'
+collections:
+  tags:
+    output: true
+    permalinks: /tags/:path/
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - amp-jekyll
@@ -69,7 +68,6 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-compose
-  - jekyll-archives
 exclude:
   - Gemfile
   - Gemfile.lock

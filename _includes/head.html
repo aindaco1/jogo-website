@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | capitalize_all | escape }}{% else %}{{ site.title | capitalize_all | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | capitalize | escape }}{% else %}{{ site.title | capitalize | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" as="style" crossorigin>
   <link rel="preload" href="/assets/fonts/Noir_regular.woff" as="font" type="font/woff" crossorigin>

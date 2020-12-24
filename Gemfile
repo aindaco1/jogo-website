@@ -27,5 +27,4 @@ group :jekyll_plugins do
    gem "jekyll-redirect-from"
    gem 'jekyll-compose'
    gem 'jekyll-sitemap'
-   gem 'jekyll-archives'
 end

@@ -5,7 +5,7 @@ display_title: "Susmongus is upon us!"
 description: "We built the first voice real-time assistant for Among Us. Try it out!"
 date:   2020-12-09 00:00:00 -0700
 last_modified_at: 2020-12-23 23:12:29 -0700
-tags: [among-us, video-games, alexa]
+tags: [Among-Us, Video-Games, Alexa]
 image: /assets/img/sus.png
 image_svg: /assets/img/sus2.svg
 sitemap: true
