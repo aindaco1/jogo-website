@@ -385,6 +385,10 @@ form button {
     color:  #FCF7F8;
 }
 
+#disqus_thread {
+    min-height: 100px;
+}
+
 /*****************
 BLOG INDEX STYLING
 *****************/
