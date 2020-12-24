@@ -774,6 +774,9 @@ PHONE MEDIA QUERY FORMATTING
     .img-responsive {
         max-width: 50%;
     }
+    nav img {
+        height: 1.8rem;
+    }
 }
 
 /**********************************
