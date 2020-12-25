@@ -3,6 +3,7 @@ layout: post
 title:  "Tabletop Game Alexa Playtest"
 display_title: "Tabletop Game Alexa Playtest"
 description: "You've been invited to help us playtest tabletop games!"
+reading: "1 minute"
 date:   2020-10-16 00:12:29 -0700
 last_modified_at: 2020-12-23 23:12:29 -0700
 tags: [Tabletop, Alexa]
@@ -15,7 +16,7 @@ comments: false
 You've been invited to help us playtest tabletop games! Please fill out the survey below after you've completed one playthrough.
 
 <form action="https://formspree.io/f/xwkwvrnr" method="POST">
-  <br><br><br>
+  <br><br>
   <input type="hidden" name="_subject" value="New submission!" />
   <label for="games"><b>Which game did you play?</b></label>
   <p></p>

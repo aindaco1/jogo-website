@@ -13,12 +13,11 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
-  {% comment %}
-  {% if page.path contains '_posts' %}
-    <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
-  {% endif %}
-  {% endcomment %}
-  
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <!-- <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}"> -->
+  {% if page.reading %}
+    <meta data-rh="true" name="twitter:label1" value="Reading time">
+    <meta data-rh="true" name="twitter:data1" value="{{ page.reading }}">
+  {% endif %}
   {% seo %}
 </head>

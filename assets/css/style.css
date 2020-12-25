@@ -391,6 +391,10 @@ form button {
     min-height: 100px;
 }
 
+.reading-time {
+    margin: 1vh 0 5vh 0;
+}
+
 /*****************
 BLOG INDEX STYLING
 *****************/
@@ -519,7 +523,7 @@ BLOG INDEX STYLING
     display: block;
 }
   
-.container button {
+.blog button {
     background-color: #FCF7F8;
 }
 

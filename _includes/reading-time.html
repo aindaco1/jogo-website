@@ -1,0 +1,11 @@
+{% capture words %}
+    {{ content | number_of_words | minus: 180 }}
+{% endcapture %}
+{% assign wordcount = words | strip_newlines | remove: " " | to_integer %}
+{% unless words contains '-' %}
+    {% if wordcount > 149 %}
+        {{ wordcount | plus: 150 | divided_by: 150 | append: ' minutes to read' }}
+    {% else %}
+        {{ wordcount | plus: 150 | divided_by: 150 | append: ' minute to read' }}
+    {% endif %}
+{% endunless %}
