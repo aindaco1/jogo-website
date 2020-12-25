@@ -25,6 +25,9 @@
     <p>Copyright &copy; {{ "now" | date: "%Y" }}</p>
   </div>
 </footer>
+
+{% include open-embed.html %}
+
 <script>InstantClick.init();</script>
 {% if jekyll.environment == 'production' %}
   {% include cloudflare-analytics.html %}
