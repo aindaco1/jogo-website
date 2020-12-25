@@ -16,7 +16,7 @@ comments: true
     <header class="post-header center-text">
       <img src="{{ page.image_svg }}" class='post-image img-responsive' alt="{{ page.display_title | escape }}">
       {% for tag in page.tags %}
-        <a href="/tags/{{ tag }}" class='category-name'>
+        <a href="/tags/{{ tag }}/" class='category-name'>
           {{tag | replace: "-", " " }}
         </a>&nbsp;
       {% endfor %}

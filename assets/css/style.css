@@ -523,7 +523,7 @@ BLOG INDEX STYLING
     display: block;
 }
   
-.blog button {
+.blog button, .tag button {
     background-color: #FCF7F8;
 }
 
