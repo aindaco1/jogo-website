@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Alexa Terms of Use"
+display_title: "Alexa Terms of Use"
+description: "Alexa Terms of Use"
+date:   2021-02-08 00:00:00 -0700
+last_modified_at: 2020-02-08 00:00:00 -0700
+tags: [Alexa]
+image: /assets/img/privacy.png
+image_svg: /assets/img/privacy.svg
+sitemap: true
+display_excerpt: "Alexa Terms of Use"
+comments: false
+---
+## General
+This Terms of Use are an agreement between you (the "user”) and Jogo (“Jogo”, “us” or “we”). Before using any of our Alexa Skills (“our skills”), please read this agreement and our [Privacy Policy for Alexa Skills](https://jogo.gg/privacy-policy-for-alexa-skills) as well as the [Alexa Terms of Use](https://www.amazon.com/gp/help/customer/display.html?nodeId=201809740) by the Amazon Digital Services LLC (with its affiliates, “Amazon”).
+
+Regarding Amazon, “Alexa” means their Alexa Voice Service which includes third party services (like our skills) and other related Software.
+
+If you use one of our skills you fully agree to this Terms of Use.
+
+## Disclaimer
+Our skills or parts of it may discontinue at any time or might contain errors. You use our skills on your own responsibility. Any information should not be seen as advice.
+
+## Changes
+Our skills or parts of it may change or be updated at any time. Further, our Terms of Use might change. You can find a link to this agreement on the description page of the skill in the Alexa App or in the Alexa Store. Your continued use of our skill after changes of the Terms of Use or the skill itself will be seen as your acceptance of both.
