@@ -28,7 +28,7 @@ We'll need the email address associated with your Alexa device to add you to the
     <label for="signup" title="email sign-up"></label>
     <input id="signup" type="email" name="_reply_to" required placeholder="Email address">
     <input type="hidden" name="_gotcha">
-    <br>
+    <br><br>
     <button>SIGN UP FOR THE BETA</button>
 </form>
 
