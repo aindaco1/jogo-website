@@ -28,7 +28,7 @@ We'll need the email address associated with your Alexa device to add you to the
     <label for="signup" title="email sign-up"></label>
     <input id="signup" type="email" name="_reply_to" required placeholder="Email address">
     <input type="hidden" name="_gotcha">
-    </br>
+    <br>
     <button>SIGN UP FOR THE BETA</button>
 </form>
 
@@ -61,7 +61,6 @@ Preface every command with "Alexa ..."
 ### Playtest survey
 
 <form action="https://formspree.io/f/mknpawjd" method="POST">
-  <br><br>
   <input type="hidden" name="_subject" value="New submission!" />
   <label for="skill"><b>How would you best describe your Among Us skill level?</b></label>
   <br><br>
@@ -70,31 +69,31 @@ Preface every command with "Alexa ..."
     <option value="intermediate">Intermediate</option>
     <option value="advanced">Advanced (played more than 10 times)</option>
   </select>
-  <br><br><br>
+  <br><br>
   <label for="frustrating"><b>What was the most frustrating moment or aspect of what you just experienced?</b></label>
   <p></p>
   <textarea name="frustrating" placeholder="Frustations here"></textarea>
-  <br>
+  <br><br>
   <label for="favorite"><b>What was your favorite moment or aspect of what you just experienced?</b></label>
   <p></p>
   <textarea name="favorite" placeholder="Favorites here"></textarea>
-  <br>
+  <br><br>
   <label for="wanted"><b>Was there anything you wanted to do that you couldn’t?</b></label>
   <p></p>
   <textarea name="wanted" placeholder="Desires here"></textarea>
-  <br>
+  <br><br>
   <label for="magic-wand"><b>If you had a magic wand to wave, and you could change, add, or remove anything from the experience, what would it be?</b></label>
   <p></p>
   <textarea name="magic-wand" placeholder="Magic wand ideas here"></textarea>
-  <br>
+  <br><br>
   <label for="description"><b>How would you describe this game to your friends and family?</b></label>
   <p></p>
   <textarea name="description" placeholder="Description here"></textarea>
-  <br>
+  <br><br>
   <label for="other-ideas"><b>Anything else we didn't think of?</b></label>
   <p></p>
   <textarea name="other-ideas" placeholder="Other ideas here"></textarea>
-  <br><br><br>
+  <br><br>
   <p><b>Can we contact you for follow-up questions?</b></p>
   <input type="radio" id="yes" name="yes" value="1">
   <label for="yes">Sure</label><br>
