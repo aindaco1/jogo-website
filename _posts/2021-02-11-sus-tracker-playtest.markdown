@@ -20,7 +20,7 @@ You'll need the following to help us test Sus Tracker:
 - A Windows PC
 - An Alexa device OR the Alexa app installed on your smartphone (associated with your Amazon account)
 - Among Us for Windows (Steam version)
-- [Sus Tracker for Windows](https://google.com)
+- [Sus Tracker for Windows](https://mega.nz/file/ddByVZxS#1q3y1wG6VMbxmG2vi_YppEupgTxOf1ATo8BTM0T_VJA)
 
 We'll need the email address associated with your Alexa device to add you to the beta, which you can submit here:
 
@@ -36,7 +36,7 @@ We'll need the email address associated with your Alexa device to add you to the
 
 1. You'll get an email from Amazon notifying you that have been invited to the Sus Tracker beta -- keep an eye out for it (check your spam or junk folder if you don't see it in your inbox) and click on the link to accept the beta invite.
 
-2. Make sure you have all the requirements in place. Then install [Sus Tracker for Windows](https://google.com) on your Windows PC and run it -- you will be asked for a six-digit code.
+2. Make sure you have all the requirements in place. Then install [Sus Tracker for Windows](https://mega.nz/file/ddByVZxS#1q3y1wG6VMbxmG2vi_YppEupgTxOf1ATo8BTM0T_VJA) on your Windows PC and run it -- you will be asked for a six-digit code.
 
 3. With your Alexa device in listening distance, say "Alexa, open Sus Tracker." -- you will then hear a brief explanation and a six-digit code. Enter that six-digit code in the Sus Tracker Windows app -- if you missed it, you can get your code again by saying, "Alexa, open Sus Tracker and get my code."
 
