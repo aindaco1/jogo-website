@@ -48,8 +48,8 @@ We'll need the email address associated with your Alexa device to add you to the
 6. When it's time to vote, you can get a sus summary by saying "Alexa, get sus with Sus Tracker." All sus resets at the end of the round automatically.
 
 7. Have fun!
-&nbsp;
 
+&nbsp;
 ### All possible commands
 
 Preface every command with "Alexa ..."
@@ -59,8 +59,8 @@ Preface every command with "Alexa ..."
 - "Add sus to {color of the player} with Sus Tracker." -- self-explanatory. Example: "Add sus to cyan with Sus Tracker."
 - "Clear all sus for {color of the player} with Sus Tracker." -- self-explanatory.
 - "Clear all sus with Sus Tracker." -- clears sus for all players.
-&nbsp;
 
+&nbsp;
 ### Playtest survey
 
 <form action="https://formspree.io/f/mknpawjd" method="POST">
