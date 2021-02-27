@@ -15,6 +15,7 @@ display_excerpt: "We built the first voice real-time assistant for Among Us. Hel
 
 Sus Tracker is the first real-time voice assistant for [Among Us](https://store.steampowered.com/app/945360/Among_Us/). Right now, you can use it to help you keep track of "sus" (AKA suspicion) of other players.
 
+&nbsp;
 ### Requirements
 
 You'll need the following to help us test Sus Tracker:
@@ -25,6 +26,7 @@ You'll need the following to help us test Sus Tracker:
 - Among Us for Windows ([Steam version](https://store.steampowered.com/app/945360/Among_Us/))
 - [Sus Tracker for Windows](https://mega.nz/file/5R420JwR#nZlN_N6TBjeECBOrhO_EQ-WIRW698A3QiKr6xYbI6G4)
 
+&nbsp;
 ### Instructions
 
 1. Make sure you have all the requirements in place. Then install [Sus Tracker for Windows](https://mega.nz/file/5R420JwR#nZlN_N6TBjeECBOrhO_EQ-WIRW698A3QiKr6xYbI6G4) on your Windows PC and run it -- you will be asked for a six-digit code.
