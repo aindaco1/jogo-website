@@ -10,6 +10,12 @@ layout: default
 	<h1>{{ page.title | escape }}</h1>
 </div>
 
-<div class="page-content">
-	{{ content }}
+<header class="post-header center-text">
+	<img src="{{ page.image_svg }}" class='post-image img-responsive' alt="{{ page.title | escape }}">
+</header>
+
+<div class="container">
+	<div class="page-content">
+		{{ content }}
+	</div>
 </div>
