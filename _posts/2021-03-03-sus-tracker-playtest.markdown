@@ -3,8 +3,8 @@ layout: post
 title:  "Sus Tracker"
 display_title: "Sus Tracker"
 description: "We built the first voice real-time assistant for Among Us. Check it out!"
-date:   2021-02-11 00:00:00 -0700
-last_modified_at: 2021-02-11 00:00:00 -0700
+date:   2021-03-03 00:00:00 -0700
+last_modified_at: 2021-03-03 00:00:00 -0700
 tags: [Among-Us, Video-Games, Alexa]
 image: /assets/img/sus.png
 image_svg: /assets/img/sus2.svg
