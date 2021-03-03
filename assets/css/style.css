@@ -15,6 +15,10 @@
     font-display: swap;
 }
 
+strong {
+    font-family: 'noir medium';
+}
+
 /*******************
 WHOLE SITE FORMATTING
 ********************/
