@@ -42,6 +42,19 @@ You'll need the following to help us test Sus Tracker:
 6. Have fun!
 
 &nbsp;
+### What does the Sus Tracker Windows app do?
+
+The Windows app detects when you've completed a round in Among Us and resets your sus automatically.
+
+&nbsp;
+### Helpful tips
+
+- Speak slowly and clearly to Alexa -- otherwise, you'll probably end up adding sauce to your shopping list :)
+- You must end every command to Alexa with "with Sus Tracker" -- we're working on a better solution.
+- The Sus Tracker Windows app must be running while you're playing Among Us to automatically reset your sus at the end of every round. Otherwise, you'll need to manually clear all sus by voice command.
+- After you start the Sus Tracker app, you can minimize it.
+
+&nbsp;
 ### All possible commands
 
 Preface every command with "Alexa ..."
