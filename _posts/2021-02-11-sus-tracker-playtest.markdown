@@ -13,7 +13,7 @@ display_excerpt: "We built the first voice real-time assistant for Among Us. Che
 ---
 ### What is this?
 
-Sus Tracker is the first real-time voice assistant for [Among Us](https://store.steampowered.com/app/945360/Among_Us/). Right now, you can use it to help you keep track of "sus" (AKA suspicion) of other players.
+**Sus Tracker is the first real-time voice assistant for [Among Us](https://store.steampowered.com/app/945360/Among_Us/).** Right now, you can use it to help you keep track of "sus" (AKA suspicion) of other players.
 
 &nbsp;
 ### Requirements
@@ -49,24 +49,24 @@ The Windows app detects when you've completed a round in Among Us and resets you
 &nbsp;
 ### Helpful tips
 
-- Speak slowly and clearly to Alexa -- otherwise, you'll probably end up adding sauce to your shopping list :)
-- You must end every command to Alexa with "with Sus Tracker" -- we're working on a better solution.
+- **Speak slowly and clearly to Alexa** -- otherwise, you'll probably end up adding sauce to your shopping list :)
+- **You must end every command to Alexa with "with Sus Tracker"** -- we're working on a better solution.
 - The Sus Tracker Windows app must be running while you're playing Among Us to automatically reset your sus at the end of every round. Otherwise, you'll need to manually clear all sus by voice command.
-- After you start the Sus Tracker app, you can minimize it.
+- After you start the Sus Tracker app, feel free to minimize it.
 
 &nbsp;
 ### All possible commands
 
 Preface every command with "Alexa ..."
 
-- "Get my code with Sus Tracker." -- provides your login code.
-- "Get sus with Sus Tracker." -- provides a summary of sus.
-- "Add sus to {color of the player} with Sus Tracker." -- self-explanatory. Example: "Add sus to cyan with Sus Tracker."
-- "Clear sus for {color of the player} with Sus Tracker." -- self-explanatory.
-- "Clear all sus with Sus Tracker." -- clears sus for all players.
+- **"Get my code with Sus Tracker."** -- provides your login code.
+- **"Get sus with Sus Tracker."** -- provides a summary of sus.
+- **"Add sus to {color of the player} with Sus Tracker."** -- self-explanatory. Example: "Add sus to cyan with Sus Tracker."
+- **"Clear sus for {color of the player} with Sus Tracker."** -- self-explanatory.
+- **"Clear all sus with Sus Tracker."** -- clears sus for all players.
 
 &nbsp;
-### Playtest survey
+### Survey
 
 We know you love Among Us, but we want to know how we can make Sus Tracker better.
 
