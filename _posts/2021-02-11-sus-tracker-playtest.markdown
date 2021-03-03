@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Sus Tracker Playtest"
-display_title: "Sus Tracker Playtest"
+title:  "Sus Tracker"
+display_title: "Sus Tracker"
 description: "We built the first voice real-time assistant for Among Us. Help us test it!"
 date:   2021-02-11 00:00:00 -0700
 last_modified_at: 2021-02-11 00:00:00 -0700
@@ -24,12 +24,12 @@ You'll need the following to help us test Sus Tracker:
 - A Windows PC
 - An Alexa device OR the Alexa app installed on your smartphone (associated with your Amazon account)
 - Among Us for Windows ([Steam version](https://store.steampowered.com/app/945360/Among_Us/))
-- [Sus Tracker for Windows](https://mega.nz/file/5R420JwR#nZlN_N6TBjeECBOrhO_EQ-WIRW698A3QiKr6xYbI6G4)
+- [Sus Tracker for Windows](https://www.microsoft.com/en-us/p/sus-tracker/9pk9lvfx1rt9)
 
 &nbsp;
 ### Instructions
 
-1. Make sure you have all the requirements in place. Then install [Sus Tracker for Windows](https://mega.nz/file/5R420JwR#nZlN_N6TBjeECBOrhO_EQ-WIRW698A3QiKr6xYbI6G4) on your Windows PC and run it -- you will be asked for a six-digit code.
+1. Make sure you have all the requirements in place. Then install [Sus Tracker for Windows](https://www.microsoft.com/en-us/p/sus-tracker/9pk9lvfx1rt9) on your Windows PC and run it -- you will be asked for a six-digit code.
 
 2. With your Alexa device in listening distance, say "Alexa, open Sus Tracker." -- you will then hear a brief explanation and a six-digit code. Enter that six-digit code in the Sus Tracker Windows app -- if you missed it, you can get your code again by saying, "Alexa, get my code with Sus Tracker."
 
