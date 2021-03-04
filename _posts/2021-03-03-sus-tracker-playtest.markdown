@@ -17,6 +17,7 @@ display_excerpt: "We built the first voice real-time assistant for Among Us. Che
 
 <video controls>
   <source src="/assets/video/sus-tracker.webm" type="video/webm">
+  <source src="/assets/video/sus-tracker.mp4" type="video/mp4">
   <p>Your browser doesn't support HTML5 video. Here is a <a href="/assets/video/sus-tracker.mp4">link to the video</a> instead.</p>
 </video>
 
