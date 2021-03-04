@@ -16,7 +16,8 @@ display_excerpt: "We built the first voice real-time assistant for Among Us. Che
 **Sus Tracker is the first real-time voice assistant for [Among Us](https://store.steampowered.com/app/945360/Among_Us/).** Right now, you can use it to help you keep track of "sus" (AKA suspicion) of other players.
 
 <video controls>
-  <source src="myVideo.webm" type="video/webm">
+  <source src="/assets/video/sus-tracker.webm" type="video/webm">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="/assets/video/sus-tracker.mp4">link to the video</a> instead.</p>
 </video>
 
 &nbsp;
