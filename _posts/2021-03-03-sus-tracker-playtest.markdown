@@ -74,4 +74,4 @@ Preface every command with "Alexa ..."
 &nbsp;
 ### Survey
 
-Help us make Sus Tracker better -- fill out our survey here [here](https://jogo.gg/sus-tracker-survey-1).
+Help us make Sus Tracker better -- fill out our survey [here](https://jogo.gg/sus-tracker-survey-1).
