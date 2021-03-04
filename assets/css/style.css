@@ -316,6 +316,13 @@ footer {
 PAGE FORMATTING
 ******************/
 
+video {
+    width: 85%;
+    margin: auto;
+    display: block;
+    padding: 1em 0 1em 0;
+}
+
 .page-title {
     background: linear-gradient(33.77deg, #FF2A6D 26.12%, #FDE74C 100%);
     padding: 0 2vw 2vw;
