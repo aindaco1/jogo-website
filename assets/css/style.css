@@ -556,6 +556,10 @@ STRIPE FORMATTING
     min-height: 70vh;
 }
 
+.sr-main img {
+    max-width: 50%;
+}
+
 /*****************
 FOOTER FORMATTING
 ******************/
