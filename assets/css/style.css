@@ -548,7 +548,14 @@ BLOG INDEX STYLING
     padding: 1% 1%;
     margin: -1% -1%;
 }
-  
+
+/*****************
+STRIPE FORMATTING
+******************/
+.sr-main {
+    min-height: 70vh;
+}
+
 /*****************
 FOOTER FORMATTING
 ******************/

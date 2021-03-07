@@ -3,38 +3,22 @@ title:  "Success"
 permalink: /success/
 description: Yes! You just bought Jogo stuff!
 layout: blog
+sitemap: false
 ---
-<div class="sr-root">
+<div class="container">
   <div class="sr-main">
     <div class="sr-payment-summary completed-view">
       <h3>Your test payment succeeded</h3>
       <h5>Checkout Session ID: <span id="session"></span></h5>
     </div>
-  <div class="sr-content">
-    <div class="pasha-image-stack">
+    <div class="sr-content">
       <img
         src="https://picsum.photos/280/320?random=1"
         width="140"
         height="160"
       />
-      <img
-        src="https://picsum.photos/280/320?random=2"
-        width="140"
-        height="160"
-      />
-      <img
-        src="https://picsum.photos/280/320?random=3"
-        width="140"
-        height="160"
-      />
-      <img
-        src="https://picsum.photos/280/320?random=4"
-        width="140"
-        height="160"
-      />
     </div>
   </div>
-</div>
 <script src="https://js.stripe.com/v3/"></script>
 <script>
   var urlParams = new URLSearchParams(window.location.search);
