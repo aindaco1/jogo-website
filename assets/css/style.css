@@ -727,6 +727,9 @@ IPAD PRO MEDIA QUERY FORMATTING
     .grid-row .grid-item:nth-child(2n+3) {
         padding-right: 1vh;
     } 
+    .sr-main img {
+        max-width: 100%;
+    }    
 }
 
 /**********************************
