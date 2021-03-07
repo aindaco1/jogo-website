@@ -516,7 +516,11 @@ BLOG INDEX STYLING
     height: 60%;
     background-position: center;
 }
-    
+
+.grid-image-top img {
+    max-width: 250px;
+}
+
 .grid-item-content {
     padding: 0 2vh 7vh 2vh;
 }
@@ -551,10 +555,6 @@ BLOG INDEX STYLING
 .grid-item:hover .grid-item-wrapper {
     padding: 1% 1%;
     margin: -1% -1%;
-}
-
-.grid-image-top img {
-    max-width: 250px;
 }
 
 /*****************
