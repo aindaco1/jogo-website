@@ -38,6 +38,10 @@ body {
     overscroll-behavior-y: none;
 }
 
+main {
+    min-height: 95vh;
+}
+
 /** padding, font-size, and border-radius, transition and box-shadow
 values lifted from  original site at houseparty.com **/
 button {
@@ -552,10 +556,6 @@ BLOG INDEX STYLING
 /*****************
 STRIPE FORMATTING
 ******************/
-.sr-main {
-    min-height: 70vh;
-}
-
 .sr-main img {
     max-width: 50%;
 }
